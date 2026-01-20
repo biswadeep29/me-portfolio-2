@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght,ELSH@500,0.8&family=Fjalla+One&family=Jost:wght@700&family=Poppins&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+a {
+    transition: all 300ms ease;
+}
+
+.good-writing,
+article {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.dot-writing {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* desktop nav */
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;;
+    font-size: 1rem;    /* make the font 1.5rem */
+}
+
+a, .btn {
+    color:black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color:gray;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* menu */
+#menu-nav {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;   
+}
+
+/* open state */
+.menu-links.open {
+  max-height: 300px;
+}
+
+/* open state → cross */
+.menu-icon.open span:first-child {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open span:last-child {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Sections */
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+
+/* Profile */
+#profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section-pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section-text {
+  align-self: center;
+  text-align: center;
+}
+
+.section-text p {
+    font-weight: 600;
+}
+
+.section-text-p1 {
+    text-align: center;
+}
+
+.section-text-p2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* icons */
+.icon {
+    cursor: pointer;
+    height: 3rem;
+}
+
+/* buttons */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1 {
+    border: rgb(0, 0, 0) 0.2rem solid;
+}
+
+.btn-color-1:hover  {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* about */
+/* about section */
+#about {
+  position: relative;
+}
+
+.about-container {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-container,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section-pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* experience */
+#experience {
+  position: relative;
+}
+
+.experience-subtitle {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+/* projects */
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* skills */
+#skills {
+    position: relative;
+}
+
+article .icon {
+  cursor: default;
+}
+
+
+/* contact */
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 3.5rem;
+  cursor: default;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Biswadeep Mazumder</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="menu-nav">
+        <div class="logo">Biswadeep Mazumder</div>
+        <div class="menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/profile-pic-2.png" alt="My Profile Pic">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p><br>
+            <h1 class="title">Biswadeep Mazumder</h1><br>
+            <p class="section-text-p2">Engineering Student</p><br>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/Resume_Biswadeep_8.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <br>
+            <div class="socials-container">
+                <img src="./assets/github.png" alt="github profile" class="icon" onclick="location.href='https://www.linkedin.com/in/biswadeep-mazumder'">
+                <img src="./assets/kaggle.png" alt="kaggle profile" class="icon" onclick="location.href='https://www.kaggle.com/biswadeep29'">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/biswadeep-mazumder'">
+            </div>
+        </div>
+                <img src="./assets/arrow.png" alt="arrow sign" class="icon arrow" onclick="location.href='./#about'">
+    </section>
+
+    <section id="about">
+        <p class="section-text-p1">Get To Know More</p><br>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="./assets/about-pic.png" alt="another pic of me mogging" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3><br>
+                        <p class="good-writing">Research and industry internship experience</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="experience icon" class="icon">
+                        <h3>Education</h3>
+                        <p class="good-writing">School — Kendriya Vidyalaya Khanapara</p>
+                        <p class="good-writing">B.Tech — Jorhat Engineering College</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="good-writing">
+                        Hi, I’m Biswadeep Mazumder — a Computer Science undergrad who trains neural networks, breaks them, fixes them, and then pretends that was the plan all along. I mainly work in Machine Learning and Deep Learning, with strong experience in CNNs, solid ML fundamentals, and hands-on work with multiple ML libraries. I’ve done research at IIIT Guwahati, survived hackathons, and interned at IOCL Guwahati — because apparently one internship wasn’t enough character development.
+                    </p>
+                    <p class="good-writing">
+                        Lately, I’ve been learning web development with HTML, CSS, JavaScript, and Flask, because training models isn’t enough — now I want them deployed with clean UIs and zero emotional damage to the browser console.
+                    </p>
+                    <p class="good-writing">
+                        When I’m not doing that, I’m supporting Cristiano Ronaldo like it’s a full-time job, pretending I’ll sleep early, and overthinking conversations from 2019.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow sign" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section-text-p1">Explore My</p><br>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Research Intern, IIIT Guwahati</h2><br>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <h3 class="dot-writing">Intern under Dr. Manojit Ghose</h3>
+                                <br>
+                                <div class="article-container">
+                                    <img src="./assets/iiitg-3.jpeg" alt="p1" class="project-img">
+                                </div><br>
+                                <p class="good-writing">Designed and experimented with advanced technologies in custom CNN architectures to optimize the model performance for resource-constrained deployment.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Winter Intern, IOCL Guwahati</h2><br>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <h3 class="dot-writing">Intern under Mr. Prakash Kr. Sinha</h3>
+                                <br>
+                                <div class="article-container">
+                                    <img src="./assets/iocl-1.jpeg" alt="p1" class="project-img">
+                                </div><br>
+                                <p class="good-writing">Designed and experimented with Predictive Maintainance Machine Learning Models.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Runners Up, HACKDAYS 3.0</h2><br>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <h3 class="dot-writing">Hackathon organized by Guwahati University</h3>
+                                <br>
+                                <div class="article-container">
+                                    <img src="./assets/hackathon-1.jpeg" alt="p1" class="project-img">
+                                </div><br>
+                                <p class="good-writing">Developed an AI-based evaluation system with adaptive, concept-focused assessments to reduce rote learning and ensure fair grading.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow sign" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section-text-p1">Browse My Recent</p><br>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <!-- <div class="article-container">
+                        <img src="./assets/project-1.png" alt="p1" class="project-img">
+                    </div> -->
+                    <h2 class="experience-subtitle project-title">AI-Based Evaluation System for Fair and Effective Learning</h2>
+                    <p class="good-writing">Designed an AI-driven evaluation system with personalized, concept-focused assessments that reduce rote learning and use semantic similarity–based grading aligned with teacher intent.</p><br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/JanjyotiOjah/KamiKaze-Hackathon'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-subtitle project-title">Streamlit ML Showcase: Diamond Pricing & Land Terrain Classification</h2>
+                    <p class="good-writing">Built an interactive Streamlit application showcasing end-to-end ML workflows with real-time predictions and clean UI.</p><br>
+                    <!-- <p>Implemented a regression-based diamond price prediction system with encoded categorical features and a CNN-based land terrain classification model supporting six landscape categories.</p><br> -->
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/biswadeep29/Personal-projects'">Github</button>
+                    </div>
+                </div>
+            </div>
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <h2 class="experience-subtitle project-title">Face-Detecting Attendance System</h2>
+                    <p class="good-writing">Developed an automated attendance system that detects faces in real-time and records the date and time of each person</p><br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/biswadeep29/SealSix'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-subtitle project-title">Image Scraper Web App</h2>
+                    <p class="good-writing">Built a Streamlit web app to automate image scraping from Google Images for deep learning dataset creation</p><br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/biswadeep29/Image-Scraper-Web-App'">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow sign" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+
+    <section id="skills">
+        <p class="section-text-p1">Highlighting my</p><br>
+        <h1 class="title">Technical Skills And Interests</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>C/C++</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Libraries</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Scikit-learn</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>TensorFlow</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>OpenCV</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Flask</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Selenium</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>VS Code</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>GitHub</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Jupyter Notebook</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Colab/Kaggle Notebook</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Areas of Interests</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Machine Learning</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Computer Vision</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Web Programming</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Web Scraping</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow sign" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section-text-p1">Get in touch</p><br>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon email-icon">
+                <p><a href="mailto:biswadeepmazumder29@gmail.com">biswadeepmazumder29@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/biswadeep-mazumder">linkedin</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Biswadeep Mazumder. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
