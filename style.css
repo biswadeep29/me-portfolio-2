@@ -311,7 +311,7 @@ section {
 }
 
 .experience-subtitle {
-  color: rgb(85, 85, 85);
+  color: rgb(0, 0, 0);
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -325,9 +325,9 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
+  text-align: center;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2.5rem;
   justify-content: space-around;
 }
@@ -453,6 +453,12 @@ footer p {
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.8s ease;
+    border: 2px solid black;
+    border-radius: 0px;
+    /* box-shadow: 0 12px 30px rgba(0,0,0,0.3); */
+    box-shadow:
+      0 4px 6px rgba(0,0,0,0.1),
+      0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* both faces must be absolute */
