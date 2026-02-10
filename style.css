@@ -504,3 +504,13 @@ footer p {
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
+
+.box-skills {
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 8px 16px;       /* space between text and border */
+  border-radius: 6px;
+  /* box-shadow: 0 12px 30px rgba(0,0,0,0.3); */
+}
