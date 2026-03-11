@@ -51,7 +51,6 @@
     }
 }
 
-
 @media screen and (max-width: 1200px) {
     #contact,
     footer {
@@ -108,4 +107,18 @@
     .text-container {
         text-align: justify;
     }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-cols {
+    flex-direction: column;
+  }
+
+  .modal-right {
+    width: 100%;
+  }
 }

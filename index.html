@@ -163,73 +163,100 @@
         <img src="./assets/arrow.png" alt="arrow sign" class="icon arrow" onclick="location.href='./#projects'">
     </section>
 
+    <!-- Modal -->
+    <div class="backdrop" id="backdrop" onclick="handleBackdropClick(event)">
+        <div class="modal">
+        <div class="modal-image-wrap">
+            <img id="modal-img" src="" alt=""/>
+            <button class="modal-close" onclick="closeModal()">✕</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-role" id="modal-role"></div>
+            <div class="modal-cols">
+            <div class="modal-left">
+                <div class="modal-title" id="modal-title"></div>
+                <div class="modal-desc" id="modal-desc"></div>
+            </div>
+            <div class="modal-right">
+                <div class="modal-stack-label">Tech Stack</div>
+                <div class="modal-tags" id="modal-tags"></div>
+            </div>
+            </div>
+            <div class="modal-divider"></div>
+            <a class="modal-github" id="modal-github" href="#" target="_blank" rel="noopener">
+            View on GitHub →
+            </a>
+        </div>
+        </div>
+    </div>
+
     <section id="projects">
         <p class="section-text-p1">Browse My Recent</p><br>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
-            <div class="about-container">
-                <div class="details-container color-container scroll-block">
-                    <div class="article-container">
-                        <a href="https://github.com/biswadeep29/Iconic-Pose-Detector" target="_blank">
-                            <img src="./assets/projects-img/iconic-pose.png" alt="p1" class="project-img">
-                        </a>
+            <div class="about-container grid">
+                <div class="card scroll-block" onclick="openModal(0)">
+                    <img class="card-image" src="./assets/projects-img/iconic-pose-edit.jpeg" alt="Iconic Pose Detector"/>
+                    <div class="card-overlay"></div>
+                    <div class="card-body">
+                        <div class="card-title">Iconic Pose Detector</div>
+                        <div class="card-desc">A real-time pose detection web app built with Flask, MediaPipe, and a custom trained ML model.</div>
                     </div>
-                    <h2 class="experience-subtitle project-title">Iconic Pose Detector</h2>
-                    <p class="good-writing">A real-time body language / pose detection web app built with Flask, MediaPipe, and a custom trained ML model. Point your webcam at yourself, hold a pose for 1.5 seconds, and the app identifies it live in the browser.</p><br>
-                    <!-- <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/biswadeep29/Iconic-Pose-Detector'">Github</button>
-                    </div> -->
                 </div>
-                <div class="details-container color-container scroll-block">
-                    <div class="article-container">
-                        <a href="https://github.com/Sobham1/pump-predictive-maintenance" target="_blank">
-                            <img src="./assets/projects-img/pump.png" alt="p1" class="project-img">
-                        </a>
-                    </div>
-                    <h2 class="experience-subtitle project-title">Pump Predictive Maintenance Dashboard</h2>
-                    <p class="good-writing">A real-time IoT-based predictive maintenance system for industrial pumps. Sensor data is streamed to Firebase, processed by an ML model, and visualized on a live Flask web dashboard — with live failure probability and Remaining Useful Life (RUL) estimates.</p><br>
+            <!-- <div class="details-container color-container scroll-block">
+                <div class="article-container">
+                    <a href="https://github.com/biswadeep29/Iconic-Pose-Detector" target="_blank">
+                        <img src="./assets/projects-img/iconic-pose.png" alt="p1" class="project-img">
+                    </a>
                 </div>
-                <div class="details-container color-container scroll-block">
-                    <div class="article-container">
-                        <a href="https://github.com/JanjyotiOjah/KamiKaze-Hackathon/tree/main" target="_blank">
-                            <img src="./assets/projects-img/ghy-hack.png" alt="p1" class="project-img">
-                        </a>
+                <h2 class="experience-subtitle project-title">Iconic Pose Detector</h2>
+                <p class="good-writing">A real-time body language / pose detection web app built with Flask, MediaPipe, and a custom trained ML model. Point your webcam at yourself, hold a pose for 1.5 seconds, and the app identifies it live in the browser.</p><br>
+            </div> -->
+            
+                <div class="card scroll-block" onclick="openModal(1)">
+                    <img class="card-image" src="./assets/projects-img/pump.png" alt="Pump Predictive Maintenance"/>
+                    <div class="card-overlay"></div>
+                    <div class="card-body">
+                    <div class="card-title">Pump Predictive Maintenance Dashboard</div>
+                    <div class="card-desc">Real-time IoT-based predictive maintenance system for industrial pumps.</div>
                     </div>
-                    <h2 class="experience-subtitle project-title">AI-Based Evaluation System for Fair and Effective Learning</h2>
-                    <p class="good-writing">Designed an AI-driven evaluation system with personalized, concept-focused assessments that reduce rote learning and use semantic similarity–based grading aligned with teacher intent.</p><br>
+                </div>
+
+                <div class="card scroll-block" onclick="openModal(2)">
+                    <img class="card-image" src="./assets/projects-img/ghy-hack.png" alt="AI Evaluation System"/>
+                    <div class="card-overlay"></div>
+                    <div class="card-body">
+                    <div class="card-title">AI-Based Evaluation System</div>
+                    <div class="card-desc">AI-driven evaluation system with personalized, concept-focused assessments.</div>
+                    </div>
                 </div>
             </div>
-            <div class="about-container">
-                <div class="details-container color-container scroll-block">
-                    <div class="article-container">
-                        <a href="https://github.com/escursio675/track-attendance-1/tree/main" target="_blank">
-                            <img src="./assets/projects-img/sealsix.png" alt="p1" class="project-img">
-                        </a>
+            <div class="grid">
+                <div class="card scroll-block" onclick="openModal(3)">
+                    <img class="card-image" src="./assets/projects-img/sealsix.png" alt="Face Attendance System"/>
+                    <div class="card-overlay"></div>
+                    <div class="card-body">
+                    <div class="card-title">Face-Detecting Attendance System</div>
+                    <div class="card-desc">Automated attendance system that detects faces in real-time and logs date and time.</div>
                     </div>
-                    <h2 class="experience-subtitle project-title">Face-Detecting Attendance System</h2>
-                    <p class="good-writing">Developed an automated attendance system that detects faces in real-time and records the date and time of each person</p><br>
-                    <!-- <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/biswadeep29/SealSix'">Github</button>
-                    </div> -->
                 </div>
-                <div class="details-container color-container scroll-block">
-                    <div class="article-container">
-                        <a href="https://github.com/biswadeep29/Image-Scraper-Web-App" target="_blank">
-                            <img src="./assets/projects-img/web-scrapper.png" alt="p1" class="project-img">
-                        </a>
+
+                <div class="card scroll-block" onclick="openModal(4)">
+                    <img class="card-image" src="./assets/projects-img/web-scrapper.png" alt="Image Scraper"/>
+                    <div class="card-overlay"></div>
+                    <div class="card-body">
+                    <div class="card-title">Image Scraper Web App</div>
+                    <div class="card-desc">Streamlit app to automate image scraping from Google Images for deep learning datasets.</div>
                     </div>
-                    <h2 class="experience-subtitle project-title">Image Scraper Web App</h2>
-                    <p class="good-writing">Built a Streamlit web app to automate image scraping from Google Images for deep learning dataset creation</p><br>
                 </div>
-                <div class="details-container color-container scroll-block">
-                    <div class="article-container">
-                        <a href="https://github.com/biswadeep29/Personal-projects" target="_blank">
-                            <img src="./assets/projects-img/personal-streamlit.png" alt="p1" class="project-img">
-                        </a>
+
+                <div class="card scroll-block   " onclick="openModal(5)">
+                    <img class="card-image" src="./assets/projects-img/diamond-edit.jpg" alt="Streamlit ML Showcase"/>
+                    <div class="card-overlay"></div>
+                    <div class="card-body">
+                    <div class="card-title">Streamlit ML Showcase</div>
+                    <div class="card-desc">Interactive app showcasing diamond pricing prediction and land terrain classification.</div>
                     </div>
-                    <h2 class="experience-subtitle project-title">Streamlit ML Showcase: Diamond Pricing & Land Terrain Classification</h2>
-                    <p class="good-writing">Built an interactive Streamlit application showcasing end-to-end ML workflows with real-time predictions and clean UI.</p><br>
-                    <!-- <p>Implemented a regression-based diamond price prediction system with encoded categorical features and a CNN-based land terrain classification model supporting six landscape categories.</p><br> -->
                 </div>
             </div>
         </div>
