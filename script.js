@@ -84,3 +84,24 @@ function handleBackdropClick(e) {
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModal();
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const markers = document.querySelectorAll('.marker');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // small delay so transition is visible even if already in viewport
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, 200);
+        observer.unobserve(entry.target); // stop watching after trigger
+      }
+    });
+  }, {
+    threshold: 0.9  // lower threshold works better for inline <span> elements
+  });
+
+  markers.forEach(el => observer.observe(el));
+});

@@ -52,7 +52,8 @@
         <div class="section-text">
             <p class="section-text-p1">Hello, I'm</p><br>
             <h1 class="title">Biswadeep Mazumder</h1><br>
-            <p class="section-text-p2">Engineering Student</p><br>
+            <p class="section-text-p2">Data Science &</p>
+            <p class="section-text-p2">Machine Learning Enthusiast</p><br>
             <div class="btn-container">
                 <button class="btn btn-color-1" onclick="window.open('./assets/Resume_Biswadeep_9.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
@@ -73,36 +74,38 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section-pic-container scroll-block">
-                <img src="./assets/about-pic-2-cropped.jpeg" alt="another pic of me mogging" class="about-pic">
+            <img src="./assets/about-pic-2-cropped.jpeg" alt="another pic of me mogging" class="about-pic">
             </div>
             <div class="about-details-container">
-                <div class="about-container">
-                    <div class="details-container scroll-block">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon">
-                        <h3>Experience</h3><br>
-                        <p class="good-writing">Research and industry internship experience</p>
-                    </div>
-                    <div class="details-container scroll-block">
-                        <img src="./assets/education.png" alt="experience icon" class="icon">
-                        <h3>Education</h3>
-                        <p class="good-writing">School — Kendriya Vidyalaya Khanapara</p>
-                        <p class="good-writing">B.Tech — Jorhat Engineering College</p>
-                    </div>
+            <div class="about-container">
+                <div class="details-container scroll-block">
+                <img src="./assets/experience.png" alt="experience icon" class="icon">
+                <h3>Experience</h3><br>
+                <p class="good-writing">Research and industry internship experience</p>
+                <p class="good-writing">Runners-up at Hackathon</p>
                 </div>
-                <div class="text-container scroll-block">
-                    <p class="good-writing">
-                        Hi, I’m Biswadeep Mazumder, a CS undergrad at Jorhat Engineering College with a strong interest in Machine Learning and Deep Learning. I have worked on multiple projects in areas such as machine learning, computer vision, web development, and web automation, continually expanding my technical skills and practical understanding.
-                    </p>
-                    <p class="good-writing">
-                        I have completed two internships—one research internship at IIIT Guwahati and an industry internship at IOCL Guwahati—which provided valuable experience in bridging academic concepts with real-world applications. I have also actively participated in hackathons and achieved a runner-up position in one, strengthening my problem-solving and collaborative skills.
-                    </p>
-                    <p class="good-writing">
-                        Moving forward, I aim to build a career in Data Analytics and Machine Learning, where I can leverage data to generate insights and develop intelligent systems.
-                    </p>
-                    <p class="good-writing">
-                        When I’m not coding or training models, you’ll probably find me supporting Cristiano Ronaldo like it’s a full-time job, watching Real Madrid matches like my GPA depends on it, planning to sleep early but ending up with coffee at 2 AM, or overthinking conversations from 2019.
-                    </p>
+                <div class="details-container scroll-block">
+                <img src="./assets/education.png" alt="experience icon" class="icon">
+                <h3>Education</h3><br>
+                <p class="good-writing">School — Kendriya Vidyalaya Khanapara</p>
+                <p class="good-writing">B.Tech — Jorhat Engineering College</p>
                 </div>
+            </div>
+            <div class="text-container scroll-block">
+                <ul>
+                <li class="good-writing shift"> Hi, I'm Biswadeep Mazumder, a CS undergrad at Jorhat Engineering College with a strong interest in <span class="marker">Machine Learning</span> and <span class="marker">Deep Learning</span>. </li> 
+
+                <li class="good-writing shift"> Worked on projects in <span class="marker">machine learning</span>, <span class="marker">computer vision</span>, web development, and automation, building practical end-to-end solutions. </li> 
+                
+                <li class="good-writing shift"> I have completed two internships—one research internship at <span class="marker">IIIT Guwahati</span> and an industry internship at <span class="marker">IOCL Guwahati</span>.</li>
+
+                <li class="good-writing shift"> Secured <span class="marker">Runner-up position</span> at a Guwahati University hackathon, competing with teams from <span class="marker">across Assam</span>. </li> 
+
+                <li class="good-writing shift"> Moving forward, I aim to build a career in <span class="marker">Data Analysis</span> and <span class="marker">Machine Learning</span>, focusing on real-world, impactful systems. </li> 
+
+                <li class="good-writing shift"> Outside tech, I’m probably supporting <span class="marker">Cristiano Ronaldo</span> like it's a full-time job, overthinking random conversations, or planning to sleep early but ending up with coffee at 2 AM. </li> 
+                </ul>
+            </div>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="arrow sign" class="icon arrow" onclick="location.href='./#experience'">
@@ -114,7 +117,13 @@
         <div class="experience-details-container">
             <div class="about-container">
                 <div class="details-container scroll-block">
-                    <h2 class="experience-subtitle good-writing" id="dark">Research Intern, IIIT Guwahati</h2><br>
+                    <h2 class="experience-subtitle good-writing" id="dark"><span style="position:relative; display:inline-block;">
+                                                                            Research Intern, IIIT Guwahati
+                                                                            <svg style="position:absolute; bottom:-6px; left:0; width:100%; height:8px" viewBox="0 0 100 8" preserveAspectRatio="none">
+                                                                                <path d="M0,5 Q25,0 50,5 Q75,10 100,5" stroke="#ff6b6b" stroke-width="2" fill="none"/>
+                                                                            </svg>
+                                                                            </span>
+                    </h2><br>
                     <div class="article-container">
                         <article>
                             <div>
@@ -123,13 +132,19 @@
                                 <div class="article-container">
                                     <img src="./assets/iiitg-3.jpeg" alt="p1" class="project-img">
                                 </div><br>
-                                <p class="good-writing">Designed and experimented with advanced technologies in custom CNN architectures to optimize the model performance for resource-constrained deployment.</p>
+                                <p class="good-writing">Optimized <span class="marker">custom CNN architectures</span>, reducing model <span class="marker">size by ~90%</span> while maintaining performance for deployment on <span class="marker">resource-constrained devices.</span></p>
                             </div>
                         </article>
                     </div>
                 </div>
                 <div class="details-container scroll-block">
-                    <h2 class="experience-subtitle good-writing" id="dark">Winter Intern, IOCL Guwahati</h2><br>
+                    <h2 class="experience-subtitle good-writing" id="dark"><span style="position:relative; display:inline-block;">
+                                                                            Winter Intern, IOCL Guwahati
+                                                                            <svg style="position:absolute; bottom:-6px; left:0; width:100%; height:8px" viewBox="0 0 100 8" preserveAspectRatio="none">
+                                                                                <path d="M0,5 Q25,0 50,5 Q75,10 100,5" stroke="#ff6b6b" stroke-width="2" fill="none"/>
+                                                                            </svg>
+                                                                            </span>
+                    </h2><br>
                     <div class="article-container">
                         <article>
                             <div>
@@ -138,13 +153,19 @@
                                 <div class="article-container">
                                     <img src="./assets/iocl-1.jpeg" alt="p1" class="project-img">
                                 </div><br>
-                                <p class="good-writing">Designed and experimented with Predictive Maintainance Machine Learning Models.</p>
+                                <p class="good-writing"> Designed and experimented with <span class="marker">predictive maintenance</span> machine learning models, and built a dashboard to visualize <span class="marker">remaining useful life</span> of pumps and related operational data.</p>
                             </div>
                         </article>
                     </div>
                 </div>
                 <div class="details-container scroll-block">
-                    <h2 class="experience-subtitle good-writing" id="dark">Runners Up, HACKDAYS 3.0</h2><br>
+                    <h2 class="experience-subtitle good-writing" id="dark"><span style="position:relative; display:inline-block;">
+                                                                            Runners Up, HACKDAYS 3.0
+                                                                            <svg style="position:absolute; bottom:-6px; left:0; width:100%; height:8px" viewBox="0 0 100 8" preserveAspectRatio="none">
+                                                                                <path d="M0,5 Q25,0 50,5 Q75,10 100,5" stroke="#ff6b6b" stroke-width="2" fill="none"/>
+                                                                            </svg>
+                                                                            </span>
+                    </h2><br>
                     <div class="article-container">
                         <article>
                             <div>
@@ -153,7 +174,7 @@
                                 <div class="article-container">
                                     <img src="./assets/hackathon-1.jpeg" alt="p1" class="project-img">
                                 </div><br>
-                                <p class="good-writing">Developed an AI-based evaluation system with adaptive, concept-focused assessments to reduce rote learning and ensure fair grading.</p>
+                                <p class="good-writing">Developed an <span class="marker">AI-based evaluation system</span> with adaptive, concept-focused assessments to reduce rote learning and ensure fair grading.</p>
                             </div>
                         </article>
                     </div>
@@ -222,12 +243,12 @@
                     </div>
                 </div>
 
-                <div class="card scroll-block" onclick="openModal(2)">
-                    <img class="card-image" src="./assets/projects-img/ghy-hack.png" alt="AI Evaluation System"/>
+                <div class="card scroll-block" onclick="openModal(4)">
+                    <img class="card-image" src="./assets/projects-img/web-scrapper.png" alt="Image Scraper"/>
                     <div class="card-overlay"></div>
                     <div class="card-body">
-                    <div class="card-title">AI-Based Evaluation System</div>
-                    <div class="card-desc">AI-driven evaluation system with personalized, concept-focused assessments.</div>
+                    <div class="card-title">Image Scraper Web App</div>
+                    <div class="card-desc">Streamlit app to automate image scraping from Google Images for deep learning datasets.</div>
                     </div>
                 </div>
             </div>
@@ -240,16 +261,7 @@
                     <div class="card-desc">Automated attendance system that detects faces in real-time and logs date and time.</div>
                     </div>
                 </div>
-
-                <div class="card scroll-block" onclick="openModal(4)">
-                    <img class="card-image" src="./assets/projects-img/web-scrapper.png" alt="Image Scraper"/>
-                    <div class="card-overlay"></div>
-                    <div class="card-body">
-                    <div class="card-title">Image Scraper Web App</div>
-                    <div class="card-desc">Streamlit app to automate image scraping from Google Images for deep learning datasets.</div>
-                    </div>
-                </div>
-
+                
                 <div class="card scroll-block   " onclick="openModal(5)">
                     <img class="card-image" src="./assets/projects-img/diamond-edit.jpg" alt="Streamlit ML Showcase"/>
                     <div class="card-overlay"></div>
@@ -258,6 +270,16 @@
                     <div class="card-desc">Interactive app showcasing diamond pricing prediction and land terrain classification.</div>
                     </div>
                 </div>
+
+                <div class="card scroll-block" onclick="openModal(2)">
+                    <img class="card-image" src="./assets/projects-img/ghy-hack.png" alt="AI Evaluation System"/>
+                    <div class="card-overlay"></div>
+                    <div class="card-body">
+                    <div class="card-title">AI-Based Evaluation System</div>
+                    <div class="card-desc">AI-driven evaluation system with personalized, concept-focused assessments.</div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <img src="./assets/arrow.png" alt="arrow sign" class="icon arrow" onclick="location.href='./#skills'">
